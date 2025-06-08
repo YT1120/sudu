@@ -233,6 +233,7 @@ int main() {
                     if (num == solution[cursorRow][cursorCol]) {
                         board[cursorRow][cursorCol] = num;
                     } else {
+                        board[cursorRow][cursorCol] = num; // 這行必須加上，才能顯示錯誤數字
                         errorChances--;
                     }
                     printBoard();
